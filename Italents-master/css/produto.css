@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif ;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* unidade vh (a altura do viewport), permitindo que 
+    o body defina o valor minimo de altura com base na altura total do viewport do usuario*/
+}
+
+:root {
+    --background-clean: rgb(226, 226, 184);
+    --cor-da-empresa: orange;
+}
+
+.cabecalho {
+    width: 100%;
+    background-image: url(https://img.freepik.com/fotos-premium/plano-de-fundo-de-comida-mexicana-guacamole-salsa-molhos-de-queijo-com-ingredientes-em-fundo-preto-vista-superior_266870-9468.jpg?w=2000);
+}
+
+.menu .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: 2rem;
+    color: white;
+}
+
+.bi-file-person {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+ul li#imagem-localizacao {
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.bi-geo-alt {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+.nome-localizacao {
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+    /* margin-top: 12px; */
+}
+
+.bi-image {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+/* Estilização do Footer */
+
+.footer {
+    background-color: var(--background-clean);
+    margin-top: 11.5rem;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-card li {
+    list-style: none;
+}
+
+.footer-item {
+    margin: .5rem;
+}
+
+i.bi-search {
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 6rem;
+    font-size: 40px;
+    /* margin-left: 20px; */
+}
+
+i.bi-house-fill {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.bi-cart {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-nome-item {
+    font-size: 20px;
+    font-weight: 700px;
+    color: gray;
+}
+
+/* Estilização dos produtos  */
+.nome-produto {
+    margin-top: 20px;
+    display: flex;
+    color: var(--cor-da-empresa);
+    justify-content: center; 
+}
+
+.informacao {
+    text-align: center;
+    margin-top: .1rem;
+}
+
+.container-produto {
+    display: flex;
+    justify-content: center;
+}
+
+.preco {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.preco p {
+    padding: 0 10px 0 10px;
+}
+
+.valor,p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.valor {
+    color: var(--cor-da-empresa);
+    font-weight: bold;
+}
+
+.bi-dash-square, .bi-plus-square {
+    color: var(--cor-da-empresa);
+    font-weight: bold;
+}
+
+.carrinho-produto {
+    display: flex;
+    justify-content: center;
+}
+
+.bi-cart-plus {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 40px;
+    border: none;
+    outline: none;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out; 
+}
+
+button:hover{
+    background-color: var(--cor-da-empresa);
+    border: 1px solid gray;
+    transform: scale(1);
+    box-shadow: 0 5px 15px black;
+}
+
+
+
+
+

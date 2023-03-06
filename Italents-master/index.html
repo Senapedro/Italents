@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-file-person"></i></li>
+                </a>
+                <li id="imagem-localizacao"><i class="bi bi-geo-alt"></i>
+                    <input id="cep" type="text" placeholder="Digite seu CEP">
+                    <p class="nome-localizacao"></p>
+                    <button onclick="consultaEndereco()">OK</button>
+                </li>
+
+                <li><i class="bi bi-image"></i></li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mensagem-inicio">
+            <h1 id="nome-empresa">Pedro Sena</h1>
+            <h2 class="mensagem">Olá, Seja bem-vindo!!</h2>
+            <h3 class="mensagem">Vamos fazer seu pedido?</h3>
+        </section>
+
+        <section id="input">
+            <i class="bi bi-search"></i>
+            <input id="input-text" type="text" placeholder="Digite seu pedido">
+        </section>
+
+        <section id="categorias">
+            <ul id="categoria-ul">
+                <a href="" class="categoria-a">
+                    <li class="categoria">Bebidas</li>
+                </a>
+                <a href="" class="categoria-a">
+                    <li class="categoria">Livros</li>
+                </a>
+                <a href="" class="categoria-a">
+                    <li class="categoria">Limpeza</li>
+                </a>
+                <a href="" class="categoria-a">
+                    <li class="categoria">Comida</li>
+                </a>
+            </ul>
+        </section>
+
+        <section id="cards-produtos">
+            <div class="card-produto">
+                <img src="https://zavod.com.br/wp-content/uploads/2021/06/bebidas-zavod-1.jpg" alt="">
+                <h3 class="nome-do-produto">Refrigerantes</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="https://img.freepik.com/vetores-premium/pilha-de-livros-azuis-e-amarelos-livros-de-varias-cores-sobre-fundo-branco-ilustracao_149267-1168.jpg?w=2000"
+                    alt="">
+                <h3 class="nome-do-produto">Livros</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="https://bragancaembalagens.com.br/wp-content/uploads/2020/04/depositphotos_23524585_s.jpg"
+                    alt="">
+                <h3 class="nome-do-produto">Limpeza</h3>
+            </div>
+
+            <div class="card-produto">
+                <img src="https://images-americanas.b2w.io/produtos/3097402785/imagens/cesta-basica-de-alimentos-11-itens-essenciais-qualidade/3097402793_1_large.jpg"
+                    alt="">
+                <h3 class="nome-do-produto">Pereciveis</h3>
+            </div>
+        </section>
+
+        <div id="ver-mais">
+            <a href="">Ver mais >></a>
+        </div>
+
+        <section id="avaliacao">
+            <p id="titulo-avaliacao">Avalie nosso APP</p>
+            <i class="bi bi-hand-thumbs-up"></i>
+            <i class="bi bi-hand-thumbs-down"></i>
+            <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
+        </section>
+
+        <footer id="footer" class="footer">
+            <ul class="footer-card">
+                <a href="home.html">
+                    <li class="footer-item">
+                        <i class="bi bi-house-fill"></i>
+                        <p class="footer-nome-item">Home</p>
+                    </li>
+                </a>
+
+                <a href="cadastrar_usuario.html">
+                    <li>
+                        <i class="bi bi-emoji-smile"></i>
+                        <p class="footer-nome-item">Cadastro Usuario</p>
+                    </li>
+                </a>
+
+                <a href="cadastrar_Produto.html">
+                    <li class="footer-item">
+                        <i class="bi bi-upc-scan"></i>
+                        <p class="footer-nome-item">Cadastro de Produto</p>
+                    </li>
+                </a>
+
+                <a href="carrinho.html">
+                    <li class="footer-item">
+                        <i class="bi bi-cart"></i>
+                        <p class="footer-nome-item">Carrinho</p>
+                    </li>
+                </a>
+
+                <a href="produto.html">
+                    <li class="footer-item">
+                        <i class="bi bi-stickies"></i>
+                        <p class="footer-nome-item">Produto</p>
+                    </li>
+                </a>
+            </ul>
+        </footer>
+    </main>
+    <script src="./js/script-index.js"></script>
+</body>
+
+</html>

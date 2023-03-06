@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif ;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* unidade vh (a altura do viewport), permitindo que 
+    o body defina o valor minimo de altura com base na altura total do viewport do usuario*/
+}
+
+:root {
+    --background-clean: rgb(226, 226, 184);
+    --cor-da-empresa: orange;
+}
+
+/* Estilização do Header - Nav */
+.cabecalho {
+    width: 100%;
+    background-image: url(https://img.freepik.com/fotos-premium/plano-de-fundo-de-comida-mexicana-guacamole-salsa-molhos-de-queijo-com-ingredientes-em-fundo-preto-vista-superior_266870-9468.jpg?w=2000);
+}
+
+.menu .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: 2rem;
+    color: white;
+}
+
+.bi-file-person {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+ul li#imagem-localizacao {
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+}
+
+.bi-geo-alt {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+.nome-localizacao {
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+    /* margin-top: 12px; */
+}
+
+.bi-image {
+    font-size: 50px;
+    color: var(--background-clean);
+}
+
+/* Estilizaçao da seção da mensagem  */
+
+section#mensagem-inicio {
+    padding: 2rem;
+    background-color: var(--background-clean);
+}
+
+#nome-empresa {
+    font-style: bold;
+    font-size: 50px;
+    color: var(--cor-da-empresa);
+}
+
+.mensagem {
+    color: gray;
+    font-size: 30px;
+}
+
+/* Estilizaçao da seção Input */
+section#input {
+    display: flex;
+    padding-top: .5rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#input-text {
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: .3rem 0 .3rem;
+    padding-left: 4rem;
+    border: 2mm ridge var(--cor-da-empresa);
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=text]{
+    color: gray;
+}
+
+/* Estilização  da seção Categoria */
+section#categorias {
+    display: flex;
+    justify-content: space-around;
+}
+
+#categoria-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-a {
+    margin: 3rem 5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+li.categoria{
+    margin: auto;
+}
+
+.categoria {
+    margin: auto;
+    color: gray;
+    list-style: none;
+    border: 2px solid  var(--cor-da-empresa);
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    font-weight: 700;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out; 
+}
+
+.categoria:hover{
+    background-color: var(--cor-da-empresa);
+    border: 3px solid gray;
+    transform: scale(1);
+    box-shadow: 0 5px 15px black;
+}
+
+/* Estilização da seção Produto */
+section#cards-produtos {
+    display: flex;
+}
+
+.card-produto {
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+}
+
+.card-produto:hover{
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+}
+
+.card-produto img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+h3.nome-do-produto {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-da-empresa);
+    margin-bottom: 1.3rem;
+    margin-top: .2rem;
+}
+
+div#ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+div#ver-mais a {
+    color: gray;
+    text-decoration: none;
+    margin: .8rem 2rem;
+}
+
+/*  Estilização da Avaliação */
+section#avaliacao{
+    text-align: center;
+    border: .3rem outset var(--cor-da-empresa);
+    outline: .3rem solid rgb(255, 195, 84);
+    /* box-shadow: 0 0 0 1rem gray; */
+    border-radius: 12px;
+    margin: 2rem ;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem san-serif;
+}
+
+#titulo-avaliacao{
+    font-size: 40px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+.bi-hand-thumbs-up{
+    font-size: 30px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+.bi-hand-thumbs-down {
+    font-size: 30px;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+#frase-avaliacao {
+    font-size: 20px;
+    color: gray;
+    padding: 1.2rem;
+}
+
+/* Estilização do Footer */
+
+.footer {
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer-card a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.footer-card li {
+    list-style: none;
+}
+
+.footer-item {
+    margin: .5rem;
+}
+
+i.bi-search {
+    position: absolute;
+    color: var(--cor-da-empresa);
+    padding-top: .2rem;
+    padding-left: 6rem;
+    font-size: 40px;
+    /* margin-left: 20px; */
+}
+
+i.bi-house-fill {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-emoji-smile {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-upc-scan {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.bi-cart {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+i.bi-stickies {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+
+.footer-nome-item {
+    font-size: 20px;
+    font-weight: 700px;
+    color: gray;
+}
+
+
+/* Media queries  */
+
+@media  screen and (max-width: 489px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .bi-geo-alt,.nome-localizacao, .bi-image{
+        display: none;
+    }
+
+    ul.footer-card {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer-card a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body {
+        width: 100%;
+    }
+
+    .bi-search {
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+    }
+
+    #categoria-ul {
+        flex-wrap: wrap;
+    }
+
+    #cards-produtos {
+        flex-wrap: wrap;
+    }
+
+    div.card-produto{
+        width: 100%;
+    }
+
+    span#frase-avaliacao {
+        display: none;
+    }
+}
